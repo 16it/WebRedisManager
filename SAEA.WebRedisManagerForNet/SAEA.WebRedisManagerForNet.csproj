@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,6 +38,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,44 +51,59 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>..\SAEA.Redis.WebManager\Html\favicon.ico</ApplicationIcon>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>50580537FE729E3A97C4F1058A2E3BB648250C89</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SAEA.WebRedisManagerForNet_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="SAEA.Common, Version=3.2.1.1, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
-      <HintPath>..\packages\SAEA.Common.3.2.1.1\lib\netstandard2.0\SAEA.Common.dll</HintPath>
+    <Reference Include="SAEA.Common, Version=3.3.3.5, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\SAEA.Common.3.3.3.5\lib\netstandard2.0\SAEA.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SAEA.Http, Version=3.2.1.1, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
-      <HintPath>..\packages\SAEA.Http.3.2.1.1\lib\netstandard2.0\SAEA.Http.dll</HintPath>
+    <Reference Include="SAEA.Http, Version=3.3.3.5, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\SAEA.Http.3.3.3.5\lib\netstandard2.0\SAEA.Http.dll</HintPath>
     </Reference>
-    <Reference Include="SAEA.MVC, Version=3.2.1.1, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
-      <HintPath>..\packages\SAEA.MVC.3.2.1.1\lib\netstandard2.0\SAEA.MVC.dll</HintPath>
+    <Reference Include="SAEA.MVC, Version=3.3.3.5, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\SAEA.MVC.3.3.3.5\lib\netstandard2.0\SAEA.MVC.dll</HintPath>
     </Reference>
-    <Reference Include="SAEA.RedisSocket, Version=3.2.1.1, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
-      <HintPath>..\packages\SAEA.RedisSocket.3.2.1.1\lib\netstandard2.0\SAEA.RedisSocket.dll</HintPath>
+    <Reference Include="SAEA.RedisSocket, Version=3.3.3.5, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\SAEA.RedisSocket.3.3.3.5\lib\netstandard2.0\SAEA.RedisSocket.dll</HintPath>
     </Reference>
-    <Reference Include="SAEA.Sockets, Version=3.2.1.1, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
-      <HintPath>..\packages\SAEA.Sockets.3.2.1.1\lib\netstandard2.0\SAEA.Sockets.dll</HintPath>
+    <Reference Include="SAEA.Sockets, Version=3.3.3.5, Culture=neutral, PublicKeyToken=01a82380791791ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\SAEA.Sockets.3.3.3.5\lib\netstandard2.0\SAEA.Sockets.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Core" />
     <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Dataflow, Version=4.5.24.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Tpl.Dataflow.4.5.24\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -80,236 +113,249 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\SAEA.Redis.WebManager\Controllers\ConfigController.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Controllers\ConfigController.cs">
       <Link>Controllers\ConfigController.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Controllers\RedisClusterController.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Controllers\RedisClusterController.cs">
       <Link>Controllers\RedisClusterController.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Controllers\RedisController.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Controllers\RedisController.cs">
       <Link>Controllers\RedisController.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Libs\ConfigHelper.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Libs\ConfigHelper.cs">
       <Link>Libs\ConfigHelper.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Libs\CurrentRedisClient.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Libs\CurrentRedisClient.cs">
       <Link>Libs\CurrentRedisClient.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Models\Config.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Models\Config.cs">
       <Link>Models\Config.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Models\JsonResult.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Models\JsonResult.cs">
       <Link>Models\JsonResult.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Models\KeyType.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Models\KeyType.cs">
       <Link>Models\KeyType.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Models\RedisData.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Models\RedisData.cs">
       <Link>Models\RedisData.cs</Link>
     </Compile>
-    <Compile Include="..\SAEA.Redis.WebManager\Program.cs">
+    <Compile Include="..\SAEA.WebRedisManager\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap-theme.css.map">
+    <None Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap-theme.css.map">
       <Link>Html\Content\css\bootstrap-theme.css.map</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap-theme.min.css.map">
+    <None Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap-theme.min.css.map">
       <Link>Html\Content\css\bootstrap-theme.min.css.map</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap.css.map">
+    <None Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap.css.map">
       <Link>Html\Content\css\bootstrap.css.map</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap.min.css.map">
+    <None Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap.min.css.map">
       <Link>Html\Content\css\bootstrap.min.css.map</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\SAEA.Redis.WebManager\Html\Content\font\iconfont.woff">
+    <None Include="..\SAEA.WebRedisManager\Html\Content\font\iconfont.woff">
       <Link>Html\Content\font\iconfont.woff</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="..\SAEA.Redis.WebManager\Html\AddItem.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\AddItem.html">
       <Link>Html\AddItem.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Chart.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\Chart.html">
       <Link>Html\Chart.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap-theme.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap-theme.css">
       <Link>Html\Content\css\bootstrap-theme.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap-theme.min.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap-theme.min.css">
       <Link>Html\Content\css\bootstrap-theme.min.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap.css">
       <Link>Html\Content\css\bootstrap.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\css\bootstrap.min.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\css\bootstrap.min.css">
       <Link>Html\Content\css\bootstrap.min.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\css\global.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\css\global.css">
       <Link>Html\Content\css\global.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\css\layui.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\css\layui.css">
       <Link>Html\Content\css\layui.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\bootstrap.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\bootstrap.js">
       <Link>Html\Content\js\bootstrap.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\bootstrap.min.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\bootstrap.min.js">
       <Link>Html\Content\js\bootstrap.min.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\css\modules\code.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\css\modules\code.css">
       <Link>Html\Content\js\css\modules\code.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\css\modules\layer\default\icon.png">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\css\modules\layer\default\icon.png">
       <Link>Html\Content\js\css\modules\layer\default\icon.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\css\modules\layer\default\layer.css">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\css\modules\layer\default\layer.css">
       <Link>Html\Content\js\css\modules\layer\default\layer.css</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\css\modules\layer\default\loading-1.gif">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\css\modules\layer\default\loading-1.gif">
       <Link>Html\Content\js\css\modules\layer\default\loading-1.gif</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\css\modules\layer\default\loading-2.gif">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\css\modules\layer\default\loading-2.gif">
       <Link>Html\Content\js\css\modules\layer\default\loading-2.gif</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\echarts.common.min.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\echarts.common.min.js">
       <Link>Html\Content\js\echarts.common.min.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\layer.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\layer.js">
       <Link>Html\Content\js\layer.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\layui.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\layui.js">
       <Link>Html\Content\js\layui.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\code.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\code.js">
       <Link>Html\Content\js\lay\modules\code.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\element.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\element.js">
       <Link>Html\Content\js\lay\modules\element.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\form.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\form.js">
       <Link>Html\Content\js\lay\modules\form.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\jquery.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\jquery.js">
       <Link>Html\Content\js\lay\modules\jquery.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\layer.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\layer.js">
       <Link>Html\Content\js\lay\modules\layer.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\laypage.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\laypage.js">
       <Link>Html\Content\js\lay\modules\laypage.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\laytpl.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\laytpl.js">
       <Link>Html\Content\js\lay\modules\laytpl.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\table.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\table.js">
       <Link>Html\Content\js\lay\modules\table.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\lay\modules\util.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\lay\modules\util.js">
       <Link>Html\Content\js\lay\modules\util.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\npm.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\npm.js">
       <Link>Html\Content\js\npm.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\redis.chart.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\redis.chart.js">
       <Link>Html\Content\js\redis.chart.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\redis.data.item.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\redis.data.item.js">
       <Link>Html\Content\js\redis.data.item.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\redis.data.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\redis.data.js">
       <Link>Html\Content\js\redis.data.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\redis.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\redis.js">
       <Link>Html\Content\js\redis.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\js\requestpamars.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\js\requestpamars.js">
       <Link>Html\Content\js\requestpamars.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Content\lay\modules\layui\global.js">
+    <Content Include="..\SAEA.WebRedisManager\Html\Content\lay\modules\layui\global.js">
       <Link>Html\Content\lay\modules\layui\global.js</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\favicon.ico">
+    <Content Include="..\SAEA.WebRedisManager\Html\favicon.ico">
       <Link>Html\favicon.ico</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\favicon.svg">
+    <Content Include="..\SAEA.WebRedisManager\Html\favicon.svg">
       <Link>Html\favicon.svg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Index.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\Index.html">
       <Link>Html\Index.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\IndexContent.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\IndexContent.html">
       <Link>Html\IndexContent.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\ItemsView.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\ItemsView.html">
       <Link>Html\ItemsView.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Keys.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\Keys.html">
       <Link>Html\Keys.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\RedisAdd.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\RedisAdd.html">
       <Link>Html\RedisAdd.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Remove.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\Remove.html">
       <Link>Html\Remove.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\SAEA.Redis.WebManager\Html\Rename.html">
+    <Content Include="..\SAEA.WebRedisManager\Html\Rename.html">
       <Link>Html\Rename.html</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
